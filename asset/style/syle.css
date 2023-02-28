@@ -11,6 +11,10 @@ body{
     width: 1440px;
 }
 
+header{
+    height: 10rem;
+    padding: 10px 10px;
+}
 .icon{
     display: flex;
     flex-direction: row;
@@ -31,4 +35,15 @@ body{
 .log, .sign{
     height: 3rem;
     width: 6rem;
+    color: #fff;
+    background-color: #0093dd;
+    border: none;
+    border-radius: 2px;
+}
+
+.log:hover, .sign:hover{
+    color: #0093dd;
+    background-color: transparent;
+    border: 2px solid #0093dd;
+    border-radius: 2px;
 }
