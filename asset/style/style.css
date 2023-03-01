@@ -49,23 +49,6 @@ header{
     font-size: 1rem;
 }
 
-.search{
-    background-color: transparent;
-    border-radius: 0.5em;
-    border: 0;
-    outline: none;
-    width: 30%;
-
-    color: #fff;
-}
-
-.sign, .log{
-    height: 2rem;
-    width: 6rem;
-    margin: 0.5rem;
-    
-}
-
 .banner>img{
     height: auto;
     width: 100%;
@@ -107,8 +90,8 @@ main{
 .news_items{
     display: flex;
     flex-direction: column;
-    max-width: 30vw;
-    min-height: auto;
+    width: 30vw;
+    height: auto;
     padding: 1rem 1rem;
     
 }
@@ -159,13 +142,13 @@ main{
 
 .contentent{
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
     gap: 1rem;
-    background-color: #fff;
+    background-color: #f4f4f4;
 
     width: 100%;
     margin-top: 1em;
+    margin-bottom: 1em;
 }
 .news_content2{
     display: flex;
@@ -176,15 +159,16 @@ main{
 .news_items2{
     display: flex;
     flex-direction: row;
-    width: 74%;
+    width: 100%;
     height: auto;
     padding: 1rem 1rem;
+    background-color: #fff;
     
 }
 .head3{
 
     height: 3em;
-    width: 74%;
+    width: 99%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -193,7 +177,172 @@ main{
 
 .col_img{
     padding-right: 1rem;
-    max-width: 20%;
-    max-height: auto;
+    width: 20%;
+    height: auto;
     border-radius: 4px;
+}
+
+
+.head4{
+
+    height: 3em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #251749;
+}
+
+aside{
+    height: 70%;
+    width: 54%;
+    background-color: #fff;
+}
+
+.img_ad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ad_img{
+    margin: 1rem;
+    height: auto;
+    width: 90%;
+    
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    background-color: #251749;
+    color: #fff;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar{
+        height: 30px;
+        width: auto;
+        padding: 15px 10px;
+    
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+        background-color: #251749;
+    }
+    .logo{
+        width: 20%;
+        height: auto;
+    }
+
+    .navitem{
+        font-size: 6.5px;
+    }
+
+
+    main{
+        width: 100%;
+        padding: 10px;
+        display: block;  
+    }
+
+    .head2{
+        height: auto;
+        width: 100%;
+    }
+
+    .n_h{
+        font-size: 12px;
+        padding: 10px 0 10px 0;
+        font-weight: bold;
+    }
+    
+    .read_news{
+        padding: 5px 10px;
+        height: 30px;
+        width: 100%;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    .news_content, .news_content2, .contentent{
+        width: 100%;
+        display:block;
+    }
+
+    .news_items{
+        width: 100%;
+        display: block;
+    }
+
+    .new_items2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .news_txt, .news_head{
+        font-size: 60%;
+    }
+
+    .col_img{
+        width: 45%;
+        height: fit-content;
+    }
+
+    aside{
+        margin-top: 10%;
+        width: 100%;
+    }
+
+    footer{
+        height: 40px;
+        width: 100%;
+        font-size: 8px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 980px){
+    .navbar{
+        height: 6px;
+        width: auto;
+        padding: 30px 20px;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        background-color: #251749;
+    }
+    .logo{
+        width: 15%;
+        height: auto;
+    }
+
+    .navitem{
+        font-size: 10px;
+    }
+
+    main{
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .news_txt, .news_head{
+        font-size: 60%;
+    }
+    
+    .n_h{
+        font-size: 12px;
+    }
+
+    footer{
+        font-size: 8px;
+    }    
 }
